@@ -16,11 +16,11 @@ async function loadUIElements(category) {
         if (uiElements[category]) {
             uiElements[category].forEach(async (element) => {
                 // Fetch the HTML content of the design
-                const htmlResponse = await fetch(`/ui-elements/${category}/${element.htmlFile}`);
+                const htmlResponse = await fetch(`ui-elements/${category}/${element.htmlFile}`);
                 const htmlContent = await htmlResponse.text();
                 
                 // Fetch the CSS content of the design
-                const cssResponse = await fetch(`/ui-elements/${category}/${element.cssFile}`);
+                const cssResponse = await fetch(`ui-elements/${category}/${element.cssFile}`);
                 const cssContent = await cssResponse.text();
 
                 // Create a div to hold each design
@@ -77,12 +77,12 @@ document.addEventListener('DOMContentLoaded', async function () {
     const previewFrame = document.getElementById('preview');
 
     // Fetch and load the HTML code into the editor
-    const htmlResponse = await fetch(`/ui-elements/${category}/${htmlFile}`);
+    const htmlResponse = await fetch(`ui-elements/${category}/${htmlFile}`);
     const htmlContent = await htmlResponse.text();
     htmlEditor.value = htmlContent;
 
     // Fetch and load the CSS code into the editor
-    const cssResponse = await fetch(`/ui-elements/${category}/${cssFile}`);
+    const cssResponse = await fetch(`ui-elements/${category}/${cssFile}`);
     const cssContent = await cssResponse.text();
     cssEditor.value = cssContent;
 
