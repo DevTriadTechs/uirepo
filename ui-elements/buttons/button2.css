@@ -1,3 +1,9 @@
 button{
-    background-color: #0f0;
+    padding: 0.5rem;
+    cursor: pointer;
+    border: 2px solid #131111;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 900;
 }

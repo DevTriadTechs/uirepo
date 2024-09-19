@@ -1,13 +1,13 @@
 {
     "buttons": [
         {
-            "id": "btn1",
+            "user":"Arjun K",
             "name": "Primary Button",
             "htmlFile": "button1.html",
             "cssFile": "button1.css"
         },
         {
-            "id": "btn2",
+            "user":"Arjun K",
             "name": "Secondary Button",
             "htmlFile": "button2.html",
             "cssFile": "button2.css"
@@ -15,10 +15,18 @@
     ],
     "cards": [
         {
-            "id": "card1",
+            "user": "Arjun K",
             "name": "Basic Card",
             "htmlFile": "cards1.html",
             "cssFile": "cards1.css"
+        }
+    ],
+    "navbar": [
+        {
+            "user": "Arjun K",
+            "name": "Basic Navbar",
+            "htmlFile": "navbar1.html",
+            "cssFile": "navbar1.css"
         }
     ]
 }

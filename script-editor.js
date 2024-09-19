@@ -72,7 +72,15 @@ document.addEventListener('DOMContentLoaded', async function() {
 
         try {
             await navigator.clipboard.writeText(content);
-            alert(`${editorId === 'html-editor' ? 'HTML' : 'CSS'} code copied to clipboard!`);
+        
+            // Update the toast message based on the editor type (HTML or CSS)
+            const toastBody = document.querySelector('#toast .toast-body');
+            toastBody.textContent = `${editorId === 'html-editor' ? 'HTML' : 'CSS'} code copied to clipboard!`;
+        
+            // Trigger the Bootstrap toast
+            const toastElement = document.getElementById('toast');
+            const toast = new bootstrap.Toast(toastElement);
+            toast.show();
         } catch (err) {
             console.error('Failed to copy text: ', err);
         }
