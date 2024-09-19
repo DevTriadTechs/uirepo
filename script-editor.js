@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     // Function to fetch file content
     async function fetchFileContent(filePath) {
-        const response = await fetch(`/ui-elements/${filePath}`);
+        const response = await fetch(`ui-elements/${filePath}`);
         return response.text();
     }
 
