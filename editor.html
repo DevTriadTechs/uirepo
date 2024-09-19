@@ -1,110 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML & CSS Editor</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML & CSS Editor</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<style>
+		/* Styling for the editor */
+		body {
+			font-family: Arial, sans-serif;
+		}
+
+		h2 {
+			text-align: center;
+		}
+
+		.tabs {
+			display: flex;
+			justify-content: flex-start;
+			margin-bottom: 10px;
+		}
+
+		.tabs button {
+			padding: 0.5rem;
+			cursor: pointer;
+			border: 2px solid #131111;
+			background-color: #000;
+			color: #fff;
+			border-radius: 5px;
+
+			/* margin-right: 5px; */
+		}
+
+		.tabs button.active {
+			background-color: #131111;
+			border-bottom: 2px solid #007bff;
+		}
+
+		.editor-container {
+			display: none;
+		}
+
+		.editor-container.active {
+			display: block;
+		}
+
+		.editor {
+			width: 100%;
+			height: 50dvh;
+			padding: 10px;
+			font-family: monospace;
+			background-color: #131111;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			margin-bottom: 10px;
+		}
+
+		/* Copy button styling */
+
+
+		.copy-btn:hover {
+			background-color: #fff;
+			color: #000;
+		}
+
+		/* Preview styling */
+		iframe#preview {
+			width: 100%;
+			height: 50dvh;
+			border: 1px solid #fff;
+			background-color: #131111;
+		}
+
+		.preview {
+			background-color: #131111;
+
+		}
+	</style>
     <base href="/ui-repo/">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        /* Styling for the editor */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        h2 {
-            text-align: center;
-        }
-
-        .tabs {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 10px;
-        }
-
-        .tabs button {
-            padding: 10px 20px;
-            cursor: pointer;
-            border: 1px solid #ddd;
-            background-color: #f9f9f9;
-            margin-right: 5px;
-        }
-
-        .tabs button.active {
-            background-color: #ddd;
-            border-bottom: 2px solid #007bff;
-        }
-
-        .editor-container {
-            display: none;
-        }
-
-        .editor-container.active {
-            display: block;
-        }
-
-        .editor {
-            width: 100%;
-            height: 300px;
-            padding: 10px;
-            font-family: monospace;
-            background-color: #f3f3f3;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-
-         /* Copy button styling */
-         .copy-btn {
-            padding: 8px 15px;
-            font-size: 14px;
-            cursor: pointer;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-
-        .copy-btn:hover {
-            background-color: #0056b3;
-        }
-
-        /* Preview styling */
-        iframe#preview {
-            width: 100%;
-            height: 300px;
-            border: 1px solid #ddd;
-            background-color: white;
-        }
-    </style>
+   
 </head>
-<body>
 
-    <h2>HTML & CSS Editor with Live Preview</h2>
+<body data-bs-theme="dark">
 
-    <!-- Tabs for HTML and CSS Editors -->
-    <div class="tabs">
-        <button id="html-tab" class="active" onclick="showEditor('html')">HTML</button>
-        <button id="css-tab" onclick="showEditor('css')">CSS</button>
-    </div>
 
-    <!-- HTML Editor -->
-    <div id="html-editor-container" class="editor-container active">
-        <textarea id="html-editor" class="editor"></textarea>
-        <button class="copy-btn" onclick="copyToClipboard('html-editor')">Copy HTML</button>
-    </div>
 
-    <!-- CSS Editor -->
-    <div id="css-editor-container" class="editor-container">
-        <textarea id="css-editor" class="editor"></textarea>
-        <button class="copy-btn" onclick="copyToClipboard('css-editor')">Copy CSS</button>
-    </div>
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<div class="container-fluid">
+			<a class="navbar-brand fw-bold" href="index.html"> <img src="/assets/uirepo-logo.png" width="70px"
+					class="fw-bold text-dark p-1"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link text-light fw-bold" aria-current="page" href="index.html">Home</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link text-light fw-bold dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							Categories
+						</a>
+						<div class="dropdown-menu p-4" aria-labelledby="navbarDropdownMenuLink">
+							<div class="d-flex">
+								<!-- First Column -->
+								<ul class="list-unstyled me-4">
+									<li><a class="dropdown-item" href="designs.html?category=accordion">Accordion</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=alert">Alert</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=badge">Badge</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=breadcrumb">Breadcrumb</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=buttons">Buttons</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=buttongroup">Button Group</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=cards">Card</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=checkbox">Checkbox</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=closebutton">Close Button</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=collapse">Collapse</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=dropdowns">Dropdowns</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=fileupload">File Upload</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=footer">Footer</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=forms">Forms</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=input">Input</a></li>
+									<!-- More items -->
+								</ul>
+								<!-- Second Column -->
+								<ul class="list-unstyled">
+									<li><a class="dropdown-item" href="designs.html?category=lists">Lists</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=loaders">Loaders</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=modal">Modal</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=navbar">Navbar</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=offcanvas">Offcanvas</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=pagination">Pagination</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=popovers">Popovers</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=progressbar">Progress Bar</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=radio">Radio Button</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=range">Range</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=sidebar">Sidebar</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=tables">Tables</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=toasts">Toasts</a></li>
+									<li><a class="dropdown-item" href="designs.html?category=tooltips">Tooltips</a></li>
 
-    <h3>Live Preview</h3>
-    <iframe id="preview"></iframe>
+									<!-- More items -->
+								</ul>
+							</div>
+						</div>
+					</li>
 
-    <script src="script-editor.js"></script>
+
+					<li class="nav-item">
+						<a class="nav-link fw-bold text-light" aria-current="page" href="https://github.com/arjjunk/ui-repo/"
+							target="_blank">Add an Element</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Tabs for HTML and CSS Editors -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 tabs d-flex flex-row justify-content-between">
+				<div>
+					<button id="html-tab" class="active fw-bold" onclick="showEditor('html')"><i class="fa-brands fa-html5" style="color: #ff7800;"></i>&nbsp;&nbsp;HTML</button>
+					<button id="css-tab" class="fw-bold" onclick="showEditor('css')"><i class="fa-brands fa-css3-alt" style="color: #3584e4;"></i>&nbsp;&nbsp;CSS</button>
+				</div>
+				<div>
+					<button class="copy-btn" onclick="copyToClipboard('html-editor')"><i class="fa-solid fa-copy"></i>
+						HTML</button>
+					<button class="copy-btn" onclick="copyToClipboard('css-editor')" id="liveToastBtn">				<i class="fa-solid fa-copy"></i>
+						CSS</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+
+				<div id="html-editor-container" class="editor-container active">
+					<textarea id="html-editor" class="editor"></textarea>
+				</div>
+
+				<!-- CSS Editor -->
+				<div id="css-editor-container" class="editor-container">
+					<textarea id="css-editor" class="editor"></textarea>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<iframe id="preview" class="preview"></iframe>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- HTML Editor -->
+
+	<div class="toast-container position-fixed bottom-0 end-0 p-3">
+		<div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+			<div class="toast-header">
+				<i class="fa-solid fa-copy text-success"></i>
+				<strong class="me-auto">&nbsp;&nbsp;Copy</strong>
+				<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+			</div>
+			<div class="toast-body">
+			</div>
+		</div>
+	</div>
+	
+
+
+	<script src="script-editor.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

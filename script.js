@@ -10,9 +10,11 @@ async function loadUIElements(category) {
         const response = await fetch('ui-elements.json');  // Fetch JSON data
         const uiElements = await response.json();
         
-        const designsContainer = document.querySelector('.designs .cards');
+        const designsContainer = document.querySelector('.designs');
         designsContainer.innerHTML = '';  // Clear previous content
 
+        const categoryHeading = document.getElementById('category-heading');
+        categoryHeading.textContent = category;  // Set heading text
         if (uiElements[category]) {
             uiElements[category].forEach(async (element) => {
                 // Fetch the HTML content of the design
@@ -23,18 +25,29 @@ async function loadUIElements(category) {
                 const cssResponse = await fetch(`ui-elements/${category}/${element.cssFile}`);
                 const cssContent = await cssResponse.text();
 
+
+                // card div
+                const cardDiv = document.createElement('div');
+                cardDiv.classList.add('cards')
                 // Create a div to hold each design
                 const designDiv = document.createElement('div');
+                designDiv.classList.add('design-card')
                 const shadow = designDiv.attachShadow({ mode: 'open' });  // Create shadow DOM
 
+
+                const bottomCard = document.createElement('div');
+                bottomCard.classList.add('bottomCard','d-flex','flex-row','justify-content-between');
                 // Create a button to view the code and add it inside shadow DOM
                 const viewCodeBtn = document.createElement('button');
-                viewCodeBtn.textContent = "View Code";
-                viewCodeBtn.classList.add('btn', 'btn-secondary');
+                viewCodeBtn.textContent = "</> Code";
+                viewCodeBtn.classList.add('view-btn');
                 viewCodeBtn.onclick = () => {
                     window.location.href = `editor.html?htmlFile=${category}/${element.htmlFile}&cssFile=${category}/${element.cssFile}`;
                 };
 
+                const userName = document.createElement('span');
+                userName.textContent = "Designed by " + element.user;
+                userName.classList.add('fw-bold','name');
                 // Inject the HTML, CSS, and button into the shadow DOM
                 shadow.innerHTML = `
                     <style>${cssContent}</style>
@@ -44,11 +57,18 @@ async function loadUIElements(category) {
                 // shadow.appendChild(viewCodeBtn);  // Append the button inside the shadow DOM
 
                 // Append the design div to the container
-                designsContainer.appendChild(designDiv);
-                designsContainer.appendChild(viewCodeBtn);
+                designsContainer.appendChild(cardDiv);
+
+                cardDiv.appendChild(designDiv);
+                bottomCard.appendChild(userName);
+                bottomCard.appendChild(viewCodeBtn);
+                cardDiv.appendChild(bottomCard);
             });
         } else {
-            console.error("Category not found in JSON");
+
+            const errorDiv = document.createElement('h2');
+            errorDiv.textContent = "Design is not available right now";
+            designsContainer.appendChild(errorDiv);
         }
     } catch (error) {
         console.error('Error loading UI elements:', error);
