@@ -23,7 +23,7 @@
     ],
     "navbar": [
         {
-            "user": "Arjun K",
+            "username": "Arjun K",
             "name": "Basic Navbar",
             "htmlFile": "navbar1.html",
             "cssFile": "navbar1.css"

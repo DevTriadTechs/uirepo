@@ -4,84 +4,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>HTML & CSS Editor</title>
+	<title>UI REPO</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="css/style.css">
 	<style>
 		/* Styling for the editor */
-		body {
-			font-family: Arial, sans-serif;
-		}
+		
 
-		h2 {
-			text-align: center;
-		}
-
-		.tabs {
-			display: flex;
-			justify-content: flex-start;
-			margin-bottom: 10px;
-		}
-
-		.tabs button {
-			padding: 0.5rem;
-			cursor: pointer;
-			border: 2px solid #131111;
-			background-color: #000;
-			color: #fff;
-			border-radius: 5px;
-
-			/* margin-right: 5px; */
-		}
-
-		.tabs button.active {
-			background-color: #131111;
-			border-bottom: 2px solid #007bff;
-		}
-
-		.editor-container {
-			display: none;
-		}
-
-		.editor-container.active {
-			display: block;
-		}
-
-		.editor {
-			width: 100%;
-			height: 50dvh;
-			padding: 10px;
-			font-family: monospace;
-			background-color: #131111;
-			color: #fff;
-			border: none;
-			border-radius: 5px;
-			margin-bottom: 10px;
-		}
-
-		/* Copy button styling */
-
-
-		.copy-btn:hover {
-			background-color: #fff;
-			color: #000;
-		}
-
-		/* Preview styling */
-		iframe#preview {
-			width: 100%;
-			height: 50dvh;
-			border: 1px solid #fff;
-			background-color: #131111;
-		}
-
-		.preview {
-			background-color: #131111;
-
-		}
 	</style>
-    <base href="/ui-repo/">
+    <!-- <base href="/ui-repo/"> -->
    
 </head>
 
@@ -91,8 +23,8 @@
 
 	<nav class="navbar navbar-expand-lg navbar-light">
 		<div class="container-fluid">
-			<a class="navbar-brand fw-bold" href="index.html"> <img src="/assets/uirepo-logo.png" width="70px"
-					class="fw-bold text-dark p-1"></a>
+			<a class="navbar-brand fw-bold" href="index.html">      <span class="logo p-3">UI REPO</span>
+			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
 				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -162,7 +94,7 @@
 	</nav>
 
 	<!-- Tabs for HTML and CSS Editors -->
-	<div class="container-fluid">
+	<div class="container-fluid pb-5 mb-5">
 		<div class="row">
 			<div class="col-lg-6 tabs d-flex flex-row justify-content-between">
 				<div>
@@ -190,7 +122,7 @@
 				</div>
 			</div>
 			<div class="col-lg-6">
-				<iframe id="preview" class="preview"></iframe>
+				<div id="preview" class="preview"></div>
 			</div>
 		</div>
 	</div>
@@ -211,6 +143,79 @@
 	</div>
 	
 
+
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-white">
+	<!-- Section: Social media -->
+	<section class="d-flex justify-content-between p-4" style="background-color: #6351ce">
+	<!-- Left -->
+	<div class="">
+	<span class="fw-bold">Create your own elements! </span>
+	<a class="text-light fw-bold" href="https://github.com/arjjunk/ui-repo/" target="_blank"> Contribute</a>
+	</div>
+	<!-- Left -->
+	</section>
+	<!-- Section: Social media -->
+	
+	<!-- Section: Links  -->
+	<section class="">
+	<div class="container text-center text-md-start mt-5">
+	<!-- Grid row -->
+	<div class="row mt-3">
+	 <!-- Grid column -->
+	 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+	   <!-- Content -->
+	   <h6 class="text-uppercase fw-bold logo">UI REPO</h6>
+	   <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+	   <p>
+		 Open Source Repository of all UI Elements.
+	   </p>
+	 </div>
+	 <!-- Grid column -->
+	
+	
+	 <!-- Grid column -->
+	 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+	   <!-- Links -->
+	   <h6 class="text-uppercase fw-bold">Useful links</h6>
+	   <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+	   <p>
+		 <a href="index.html" class="text-white text-decoration-none fw-bold">Home</a>
+	   </p>
+	   <p>
+		 <a href="https://github.com/arjjunk/ui-repo/" target="_blank" class="text-white text-decoration-none fw-bold">Contribute</a>
+	   </p>
+	   <p>
+		 <a href="#!" class="text-white text-decoration-none fw-bold">Guidlines</a>
+	   </p>
+	 </div>
+	 <!-- Grid column -->
+	
+	 <!-- Grid column -->
+	 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+	   <!-- Links -->
+	   <h6 class="text-uppercase fw-bold">LOCATION</h6>
+	   <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+	   <p><i class="fas fa-home mr-3"></i> Calicut, Kerala, India</p>
+	 </div>
+	 <!-- Grid column -->
+	</div>
+	<!-- Grid row -->
+	</div>
+	</section>
+	<!-- Section: Links  -->
+	
+	<!-- Copyright -->
+	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+	Created By:
+	<a class="text-white text-decoration-none fw-bold" href="https://arjunk.me/" target="_blank">Arjun K</a>
+</div>
+	<!-- Copyright -->
+	</footer>
+	<!-- Footer -->
+	
 
 	<script src="script-editor.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
