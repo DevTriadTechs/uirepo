@@ -29,14 +29,31 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     // Function to update the live preview
     function updatePreview() {
-        const previewDoc = previewFrame.contentDocument || previewFrame.contentWindow.document;
-        previewDoc.open();
-        previewDoc.write(`
-            <style>${cssEditor.value}</style>
-            ${htmlEditor.value}
-        `);
-        previewDoc.close();
+        // Get the preview div where the shadow DOM will be attached
+        const previewDiv = document.getElementById('preview');
+        
+        // Clear previous content (removing any existing shadow root)
+        previewDiv.innerHTML = '';
+    
+        // Create a new div to attach the shadow DOM
+        const shadowHost = document.createElement('div');
+    
+        // Attach shadow DOM to the div (use 'open' mode so the shadow DOM is accessible)
+        const shadow = shadowHost.attachShadow({ mode: 'open' });
+    
+        // Create a new style element for the CSS
+        const styleElement = document.createElement('style');
+        styleElement.textContent = cssEditor.value;  // Set the CSS from the editor
+    
+        // Append the style and HTML content to the shadow DOM
+        shadow.appendChild(styleElement);  // Append the CSS
+        shadow.innerHTML += htmlEditor.value;  // Inject the HTML content from the editor
+    
+        // Append the shadow host to the preview div
+        previewDiv.appendChild(shadowHost);
     }
+    
+    
 
     // Event listeners to update the preview on code changes
     htmlEditor.addEventListener('input', updatePreview);

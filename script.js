@@ -37,7 +37,7 @@ async function loadUIElements(category) {
 
                 const bottomCard = document.createElement('div');
                 bottomCard.classList.add('bottomCard','d-flex','flex-row','justify-content-between');
-                // Create a button to view the code and add it inside shadow DOM
+                // Create a button to view the code
                 const viewCodeBtn = document.createElement('button');
                 viewCodeBtn.textContent = "</> Code";
                 viewCodeBtn.classList.add('view-btn');
@@ -54,7 +54,6 @@ async function loadUIElements(category) {
                     ${htmlContent}
                     <br>
                 `;
-                // shadow.appendChild(viewCodeBtn);  // Append the button inside the shadow DOM
 
                 // Append the design div to the container
                 designsContainer.appendChild(cardDiv);
