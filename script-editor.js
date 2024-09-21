@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     const params = new URLSearchParams(window.location.search);
     const htmlFile = params.get('htmlFile');
     const cssFile = params.get('cssFile');
+    const theme = params.get('theme');
 
     // Get the HTML and CSS editor textareas
     const htmlEditor = document.getElementById('html-editor');
@@ -31,6 +32,13 @@ document.addEventListener('DOMContentLoaded', async function() {
     function updatePreview() {
         // Get the preview div where the shadow DOM will be attached
         const previewDiv = document.getElementById('preview');
+        
+        if(theme=='light'){
+            previewDiv.classList.add('preview-light');
+        }
+        else{
+            previewDiv.classList.add('preview-dark');
+        }
         
         // Clear previous content (removing any existing shadow root)
         previewDiv.innerHTML = '';

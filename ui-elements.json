@@ -3,12 +3,14 @@
         {
             "user":"Arjun K",
             "name": "Primary Button",
+            "theme":"dark",
             "htmlFile": "button1.html",
             "cssFile": "button1.css"
         },
         {
             "user":"Arjun K",
             "name": "Secondary Button",
+            "theme":"light",
             "htmlFile": "button2.html",
             "cssFile": "button2.css"
         }
