@@ -13,7 +13,8 @@ Please make the designs by follwing the guidlines.
 
 ## What to Create
 
-To create a design for a UI Element you have to create a html file, a css file and add the metadata in the ui-elements.json file.
+- To create a design for a UI Element you have to create a html file, a css  file and add the metadata in the ui-elements.json file.
+- Write the HTML file without &lt;html&gt;,&lt;head&gt;,&lt;body&gt; tags
 
 ## Where to Create
 
@@ -39,12 +40,18 @@ If you are creating a button, save the HTML and CSS files in the __ui-elements/b
 
 - Add the information about the design in the ui-elements.json file in the following format :   
 
+- Add the theme according to the color of your element.  
+- For example,  
+    - If the button color is white, theme should be dark.
+    - If the color matches with both light and dark themes write theme as both.
+
 ```json
 {
     "element": [
         {
             "username": "Your github username",
             "name": "Design Name",
+            "theme": "light", // For light theme
             "htmlFile": "github_username-design_name.html",
             "cssFile": "github_username-design_name.css"
         }

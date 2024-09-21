@@ -28,10 +28,15 @@ async function loadUIElements(category) {
 
                 // card div
                 const cardDiv = document.createElement('div');
-                cardDiv.classList.add('cards')
+                if(element.theme=="light"){
+                    cardDiv.classList.add('cards-light');
+                }
+                else{
+                    cardDiv.classList.add('cards-dark');
+                }
                 // Create a div to hold each design
                 const designDiv = document.createElement('div');
-                designDiv.classList.add('design-card')
+                designDiv.classList.add('design-card');
                 const shadow = designDiv.attachShadow({ mode: 'open' });  // Create shadow DOM
 
 
@@ -42,7 +47,7 @@ async function loadUIElements(category) {
                 viewCodeBtn.textContent = "</> Code";
                 viewCodeBtn.classList.add('view-btn');
                 viewCodeBtn.onclick = () => {
-                    window.location.href = `editor.html?htmlFile=${category}/${element.htmlFile}&cssFile=${category}/${element.cssFile}`;
+                    window.location.href = `editor.html?htmlFile=${category}/${element.htmlFile}&cssFile=${category}/${element.cssFile}&theme=${element.theme}`;
                 };
 
                 const userName = document.createElement('span');

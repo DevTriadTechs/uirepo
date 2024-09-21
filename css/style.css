@@ -172,11 +172,23 @@ h1{
     min-height: 70dvh;
 }
 
-.cards{
+.cards-dark{
     width: auto;
     height: fit-content;
     border-radius: 10px;
     background-color: #131111;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.cards-light{
+    width: auto;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: #ffffffe7;
     border: none;
     display: flex;
     flex-direction: column;
@@ -190,12 +202,12 @@ h1{
 .design-card{
     margin: 2rem;
 }
-.cards .view-btn{
+.cards-dark .view-btn{
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.3s ease; /* Smooth transition */
 }
-.cards:hover .view-btn{
+.cards-dark:hover .view-btn{
     visibility: visible;
     opacity: 1;
     position: relative;
@@ -209,9 +221,34 @@ h1{
     color: #000;
     font-weight: bold;
 } 
-.name{
+.cards-light .view-btn{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease; /* Smooth transition */
+}
+.cards-light:hover .view-btn{
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.2rem 0.5rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+} 
+.cards-dark .name{
     font-size: 0.75rem;
     padding: 1rem;
+    color: #fff;
+}
+.cards-light .name{
+    font-size: 0.75rem;
+    padding: 1rem;
+    color: #000;
 }
     
 
@@ -263,6 +300,7 @@ h1{
     margin-bottom: 10px;
 }
 
+
 /* Copy button styling */
 
 
@@ -277,11 +315,16 @@ h1{
     height: 50dvh;
     border: none;
     border-radius: 8px;
-    background-color: #131111;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+.preview-dark{
+    background-color: #131111;
+}
+.preview-light{
+    background-color: #ffffffe7;
 
+}
 /* css for editor ends here */
