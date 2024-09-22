@@ -51,7 +51,7 @@ async function loadUIElements(category) {
                 };
 
                 const userName = document.createElement('span');
-                userName.textContent = "Designed by " + element.user;
+                userName.textContent = "Designed by " + element.username;
                 userName.classList.add('fw-bold','name');
                 // Inject the HTML, CSS, and button into the shadow DOM
                 shadow.innerHTML = `

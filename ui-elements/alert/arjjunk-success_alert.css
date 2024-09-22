@@ -1,0 +1,18 @@
+.alert{
+    width: 300px;
+    background-color: rgba(64, 231, 64, 0.39);
+    display: flex;
+    border-radius: 5px;
+}
+.success-tick{
+    padding: 1rem 0.5rem 0 1rem;
+}
+p{
+    color: #0f0;
+    font-weight: bold;
+}
+.close{
+    color: #fff;
+    position: relative;
+    margin: 1rem 0 0 7rem;
+}

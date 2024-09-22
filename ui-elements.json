@@ -1,26 +1,66 @@
 {
-    "buttons": [
+    "accordion": [
         {
-            "user":"Arjun K",
-            "name": "Primary Button",
-            "theme":"dark",
-            "htmlFile": "button1.html",
-            "cssFile": "button1.css"
+            "username":"arjjunk",
+            "name": "Black Accordion",
+            "theme":"light",
+            "htmlFile": "arjjunk-black_accordion.html",
+            "cssFile": "arjjunk-black_accordion.css"
         },
         {
-            "user":"Arjun K",
-            "name": "Secondary Button",
+            "username":"arjjunk",
+            "name": "White Accordion",
+            "theme":"dark",
+            "htmlFile": "arjjunk-white_accordion.html",
+            "cssFile": "arjjunk-white_accordion.css"
+        }
+    ],
+    "alert": [
+        {
+            "username":"arjjunk",
+            "name": "Success Alert",
+            "theme":"both",
+            "htmlFile": "arjjunk-success_alert.html",
+            "cssFile": "arjjunk-success_alert.css"
+        }
+    ],
+    "buttons": [
+        {
+            "username":"arjjunk",
+            "name": "Button1",
+            "theme":"dark",
+            "htmlFile": "arjjunk-button1.html",
+            "cssFile": "arjjunk-button1.css"
+        },
+        {
+            "username":"arjjunk",
+            "name": "Button2",
             "theme":"light",
-            "htmlFile": "button2.html",
-            "cssFile": "button2.css"
+            "htmlFile": "arjjunk-button2.html",
+            "cssFile": "arjjunk-button2.css"
         }
     ],
     "cards": [
         {
-            "user": "Arjun K",
-            "name": "Basic Card",
-            "htmlFile": "cards1.html",
-            "cssFile": "cards1.css"
+            "username": "arjjunk",
+            "name": "White Card",
+            "theme": "dark",
+            "htmlFile": "arjjunk-whitecard.html",
+            "cssFile": "arjjunk-whitecard.css"
+        },
+        {
+            "username": "arjjunk",
+            "name": "Terminal Dark",
+            "theme": "light",
+            "htmlFile": "arjjunk-terminal_dark.html",
+            "cssFile": "arjjunk-terminal_dark.css"
+        },
+        {
+            "username": "arjjunk",
+            "name": "Terminal Light",
+            "theme": "dark",
+            "htmlFile": "arjjunk-terminal_light.html",
+            "cssFile": "arjjunk-terminal_light.css"
         }
     ],
     "navbar": [
