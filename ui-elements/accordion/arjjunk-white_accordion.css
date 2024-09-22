@@ -1,0 +1,45 @@
+.accordion {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #000;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #111;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    display: block;
+    padding: 15px;
+    background-color: #e7dada;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.accordion-header:hover {
+    background-color: #e7dada;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 0 15px;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content p {
+    margin: 15px 0;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .accordion-content {
+    max-height: 100px; 
+    padding: 15px;
+}
