@@ -20,13 +20,13 @@ We welcome all types of UI designs, including buttons, cards, navbars, accordion
 
 ## Design Format
 
-Please create the designs by following the [Guidlines]( GUIDLINES.md)
+Please create the designs by following the [Guidlines](GUIDLINES.md)
 ## Adding a New UI Design
 
 To add a UI design, follow these steps:
 
 ### 1. Fork the Repository
-Fork the repository to your GitHub account by clicking the "Fork" button at the top of the repository page.
+Fork the [ui-repo](https://github.com/arjjunk/ui-repo/) repository to your GitHub account by clicking the "Fork" button at the top of the repository page.
 
 ### 2. Clone the Repository
 Once you've forked the repository, clone it to your local machine to begin working on it:
