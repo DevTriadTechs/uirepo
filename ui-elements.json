@@ -33,17 +33,11 @@
             "cssFile": "arjjunk-button1.css"
         },
         {
-            "user":"Arjun K",
-            "name": "Secondary Button",
-            "htmlFile": "button2.html",
-            "cssFile": "button2.css"
-        },
-        {
-            "user":"bc0d",
+            "username":"bc0d",
             "name": "Primary Button",
-            "name": "both",
-            "htmlFile": "button-primary-red.html",
-            "cssFile": "button-primary-red.css"
+            "theme": "both",
+            "htmlFile": "bc0d-button-primary-red.html",
+            "cssFile": "bc0d-button-primary-red.css"
         },
         {
             "username":"arjjunk",
