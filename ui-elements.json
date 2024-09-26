@@ -41,6 +41,7 @@
         {
             "user":"bc0d",
             "name": "Primary Button",
+            "name": "both",
             "htmlFile": "button-primary-red.html",
             "cssFile": "button-primary-red.css"
         },
