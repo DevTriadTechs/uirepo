@@ -1,0 +1,11 @@
+.dropdown-content{
+    width: 250px;
+    background: rgb(46,247,250);
+    background: linear-gradient(90deg, rgba(46,247,250,1) 34%, rgba(41,181,250,1) 46%, rgba(35,106,251,1) 79%);     
+    border: 1px solid #000;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+    padding: 1rem;
+}
+

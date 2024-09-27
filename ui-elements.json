@@ -24,6 +24,52 @@
             "cssFile": "arjjunk-success_alert.css"
         }
     ],
+    "badge":[
+        {
+            "username":"arjjunk",
+            "name": "Applied Badge",
+            "theme":"both",
+            "htmlFile": "arjjunk-applied_badge.html",
+            "cssFile": "arjjunk-applied_badge.css"
+        },
+        {
+            "username":"arjjunk",
+            "name": "Approved Badge",
+            "theme":"both",
+            "htmlFile": "arjjunk-approved_badge.html",
+            "cssFile": "arjjunk-approved_badge.css"
+        },
+        {
+            "username":"arjjunk",
+            "name": "Rejected Badge",
+            "theme":"both",
+            "htmlFile": "arjjunk-rejected_badge.html",
+            "cssFile": "arjjunk-rejected_badge.css"
+        },
+        {
+            "username":"arjjunk",
+            "name": "Warning Badge",
+            "theme":"dark",
+            "htmlFile": "arjjunk-warning_badge.html",
+            "cssFile": "arjjunk-warning_badge.css"
+        },
+        {
+            "username":"arjjunk",
+            "name": "Badges Collection",
+            "theme":"dark",
+            "htmlFile": "arjjunk-badges_collection_dark.html",
+            "cssFile": "arjjunk-badges_collection_dark.css"
+        }
+    ],
+    "breadcrumb": [
+        {
+            "username":"arjjunk",
+            "name": "Simple Breadcrumb",
+            "theme":"dark",
+            "htmlFile": "arjjunk-simple_breadcrumb.html",
+            "cssFile": "arjjunk-simple_breadcrumb.css"
+        }
+    ],
     "buttons": [
         {
             "username":"arjjunk",
@@ -38,6 +84,15 @@
             "theme":"light",
             "htmlFile": "arjjunk-button2.html",
             "cssFile": "arjjunk-button2.css"
+        }
+    ],
+    "buttongroup": [
+        {
+            "username":"arjjunk",
+            "name": "Black Button Group",
+            "theme":"light",
+            "htmlFile": "arjjunk-black_button_group.html",
+            "cssFile": "arjjunk-black_button_group.css"
         }
     ],
     "cards": [
@@ -61,6 +116,40 @@
             "theme": "dark",
             "htmlFile": "arjjunk-terminal_light.html",
             "cssFile": "arjjunk-terminal_light.css"
+        }
+    ],
+    "checkbox":[
+        {
+            "username": "Arjun K",
+            "name": "Rounded Checkbox",
+            "theme":"both",
+            "htmlFile": "arjjunk-rounded_checkbox.html",
+            "cssFile": "arjjunk-rounded_checkbox.css"
+        }
+    ],
+    "collapse":[
+        {
+            "username": "Arjun K",
+            "name": "Simple Collapse",
+            "theme":"dark",
+            "htmlFile": "arjjunk-simple_collapse.html",
+            "cssFile": "arjjunk-simple_collapse.css"
+        }
+    ],
+    "dropdowns":[
+        {
+            "username": "Arjun K",
+            "name": "Blue Gradient Dropdown",
+            "theme":"dark",
+            "htmlFile": "arjjunk-blue_gradient_dropdown.html",
+            "cssFile": "arjjunk-blue_gradient_dropdown.css"
+        },
+        {
+            "username": "Arjun K",
+            "name": "Gradient Dropdown",
+            "theme":"dark",
+            "htmlFile": "arjjunk-gradient_dropdown.html",
+            "cssFile": "arjjunk-gradient_dropdown.css"
         }
     ],
     "navbar": [
