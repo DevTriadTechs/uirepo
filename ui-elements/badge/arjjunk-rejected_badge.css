@@ -1,0 +1,11 @@
+.rejected-badge {
+    width: 100px;
+    text-align: center;
+    background-color: rgba(241, 46, 46, 0.315);
+    border: 1px solid #f00;
+    color: rgb(226, 19, 19);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
