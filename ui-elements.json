@@ -127,7 +127,7 @@
     ],
     "checkbox":[
         {
-            "username": "Arjun K",
+            "username": "arjjunk",
             "name": "Rounded Checkbox",
             "theme":"both",
             "htmlFile": "arjjunk-rounded_checkbox.html",
@@ -136,7 +136,7 @@
     ],
     "collapse":[
         {
-            "username": "Arjun K",
+            "username": "arjjunk",
             "name": "Simple Collapse",
             "theme":"dark",
             "htmlFile": "arjjunk-simple_collapse.html",
@@ -145,23 +145,73 @@
     ],
     "dropdowns":[
         {
-            "username": "Arjun K",
+            "username": "arjjunk",
             "name": "Blue Gradient Dropdown",
             "theme":"dark",
             "htmlFile": "arjjunk-blue_gradient_dropdown.html",
             "cssFile": "arjjunk-blue_gradient_dropdown.css"
         },
         {
-            "username": "Arjun K",
+            "username": "arjjunk",
             "name": "Gradient Dropdown",
             "theme":"dark",
             "htmlFile": "arjjunk-gradient_dropdown.html",
             "cssFile": "arjjunk-gradient_dropdown.css"
         }
     ],
+    "fileupload":[
+        {
+            "username": "arjjunk",
+            "name": "File Upload",
+            "theme":"dark",
+            "htmlFile": "arjjunk-file_upload_dark.html",
+            "cssFile": "arjjunk-file_upload_dark.css"
+        },
+        {
+            "username": "arjjunk",
+            "name": "Simple File Upload",
+            "theme":"dark",
+            "htmlFile": "arjjunk-simple_file_upload.html",
+            "cssFile": "arjjunk-simple_file_upload.css"
+        }
+    ],
+    "footer": [
+        {
+            "username": "arjjunk",
+            "name": "Dark Footer",
+            "theme":"light",
+            "htmlFile": "arjjunk-dark_footer.html",
+            "cssFile": "arjjunk-dark_footer.css"
+        },
+        {
+            "username": "arjjunk",
+            "name": "Light Footer",
+            "theme":"dark",
+            "htmlFile": "arjjunk-light_footer.html",
+            "cssFile": "arjjunk-light_footer.css"
+        }
+    ],
+    "forms": [
+        {
+            "username": "arjjunk",
+            "name": "Simple Form",
+            "theme":"dark",
+            "htmlFile": "arjjunk-simple_form.html",
+            "cssFile": "arjjunk-simple_form.css"
+        }
+    ],
+    "input": [
+        {
+            "username": "arjjunk",
+            "name": "Simple Input",
+            "theme":"dark",
+            "htmlFile": "arjjunk-outlined_input.html",
+            "cssFile": "arjjunk-outlined_input.css"
+        }
+    ],
     "navbar": [
         {
-            "username": "Arjun K",
+            "username": "arjjunk",
             "name": "Basic Navbar",
             "htmlFile": "navbar1.html",
             "cssFile": "navbar1.css"
