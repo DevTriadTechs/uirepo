@@ -1,3 +1,4 @@
+<div>
 <nav aria-label="breadcrumb">
     <ul class="breadcrumb">
         <li class="breadcrumb-item"><a href="#" active>Home</a></li>
@@ -5,3 +6,32 @@
         <li class="breadcrumb-item"><a href="#" class="active">Contact</a></li>
     </ul>
 </nav>
+</div>
+
+
+<style>
+.breadcrumb{
+    list-style: none;
+    display: flex;
+}
+.breadcrumb-item a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+.breadcrumb-item:not(:last-child)::after{
+    content: " > ";
+    font-weight: bold;
+    color: #fff;
+    margin: 0.5rem;
+}
+
+.breadcrumb-item a:hover{
+    color: #00f;
+}
+a.active{
+    color: #00f;
+    text-decoration: underline;
+}
+
+</style>

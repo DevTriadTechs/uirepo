@@ -3,3 +3,36 @@
     <button class="btn">Search</button>
     <button class="btn">Profile</button>
 </div>
+
+<style>
+.button-group {
+    display: inline-flex;
+  }
+  
+  .button-group .btn {
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 900;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-group .btn:not(:last-child) {
+    border-right: none; 
+  }
+  
+  .button-group .btn:hover {
+    background-color: #141a14cb;
+  }
+  
+  .button-group .btn:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .button-group .btn:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+
+</style>
