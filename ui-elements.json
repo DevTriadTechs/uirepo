@@ -4,15 +4,13 @@
             "username":"arjjunk",
             "name": "Black Accordion",
             "theme":"light",
-            "htmlFile": "arjjunk-black_accordion.html",
-            "cssFile": "arjjunk-black_accordion.css"
+            "file": "arjjunk-black_accordion.html"
         },
         {
             "username":"arjjunk",
             "name": "White Accordion",
             "theme":"dark",
-            "htmlFile": "arjjunk-white_accordion.html",
-            "cssFile": "arjjunk-white_accordion.css"
+            "file": "arjjunk-white_accordion.html"
         }
     ],
     "alert": [
@@ -20,8 +18,7 @@
             "username":"arjjunk",
             "name": "Success Alert",
             "theme":"both",
-            "htmlFile": "arjjunk-success_alert.html",
-            "cssFile": "arjjunk-success_alert.css"
+            "file": "arjjunk-success_alert.html"
         }
     ],
     "badge":[
@@ -29,36 +26,31 @@
             "username":"arjjunk",
             "name": "Applied Badge",
             "theme":"both",
-            "htmlFile": "arjjunk-applied_badge.html",
-            "cssFile": "arjjunk-applied_badge.css"
+            "file": "arjjunk-applied_badge.html"
         },
         {
             "username":"arjjunk",
             "name": "Approved Badge",
             "theme":"both",
-            "htmlFile": "arjjunk-approved_badge.html",
-            "cssFile": "arjjunk-approved_badge.css"
+            "file": "arjjunk-approved_badge.html"
         },
         {
             "username":"arjjunk",
             "name": "Rejected Badge",
             "theme":"both",
-            "htmlFile": "arjjunk-rejected_badge.html",
-            "cssFile": "arjjunk-rejected_badge.css"
+            "file": "arjjunk-rejected_badge.html"
         },
         {
             "username":"arjjunk",
             "name": "Warning Badge",
             "theme":"dark",
-            "htmlFile": "arjjunk-warning_badge.html",
-            "cssFile": "arjjunk-warning_badge.css"
+            "file": "arjjunk-warning_badge.html"
         },
         {
             "username":"arjjunk",
             "name": "Badges Collection",
             "theme":"dark",
-            "htmlFile": "arjjunk-badges_collection_dark.html",
-            "cssFile": "arjjunk-badges_collection_dark.css"
+            "file": "arjjunk-badges_collection_dark.html"
         }
     ],
     "breadcrumb": [
@@ -66,8 +58,7 @@
             "username":"arjjunk",
             "name": "Simple Breadcrumb",
             "theme":"dark",
-            "htmlFile": "arjjunk-simple_breadcrumb.html",
-            "cssFile": "arjjunk-simple_breadcrumb.css"
+            "file": "arjjunk-simple_breadcrumb.html"
         }
     ],
     "buttons": [
@@ -75,22 +66,19 @@
             "username":"arjjunk",
             "name": "Button1",
             "theme":"dark",
-            "htmlFile": "arjjunk-button1.html",
-            "cssFile": "arjjunk-button1.css"
+            "file": "arjjunk-button1.html"
         },
         {
             "username":"bc0d",
             "name": "Primary Button",
             "theme": "both",
-            "htmlFile": "bc0d-button-primary-red.html",
-            "cssFile": "bc0d-button-primary-red.css"
+            "file": "bc0d-button-primary-red.html"
         },
         {
             "username":"arjjunk",
             "name": "Button2",
             "theme":"light",
-            "htmlFile": "arjjunk-button2.html",
-            "cssFile": "arjjunk-button2.css"
+            "file": "arjjunk-button2.html"
         }
     ],
     "buttongroup": [
@@ -98,8 +86,7 @@
             "username":"arjjunk",
             "name": "Black Button Group",
             "theme":"light",
-            "htmlFile": "arjjunk-black_button_group.html",
-            "cssFile": "arjjunk-black_button_group.css"
+            "file": "arjjunk-black_button_group.html"
         }
     ],
     "cards": [
@@ -107,22 +94,19 @@
             "username": "arjjunk",
             "name": "White Card",
             "theme": "dark",
-            "htmlFile": "arjjunk-whitecard.html",
-            "cssFile": "arjjunk-whitecard.css"
+            "file": "arjjunk-whitecard.html"
         },
         {
             "username": "arjjunk",
             "name": "Terminal Dark",
             "theme": "light",
-            "htmlFile": "arjjunk-terminal_dark.html",
-            "cssFile": "arjjunk-terminal_dark.css"
+            "file": "arjjunk-terminal_dark.html"
         },
         {
             "username": "arjjunk",
             "name": "Terminal Light",
             "theme": "dark",
-            "htmlFile": "arjjunk-terminal_light.html",
-            "cssFile": "arjjunk-terminal_light.css"
+            "file": "arjjunk-terminal_light.html"
         }
     ],
     "checkbox":[
@@ -130,8 +114,7 @@
             "username": "arjjunk",
             "name": "Rounded Checkbox",
             "theme":"both",
-            "htmlFile": "arjjunk-rounded_checkbox.html",
-            "cssFile": "arjjunk-rounded_checkbox.css"
+            "file": "arjjunk-rounded_checkbox.html"
         }
     ],
     "collapse":[
@@ -139,8 +122,7 @@
             "username": "arjjunk",
             "name": "Simple Collapse",
             "theme":"dark",
-            "htmlFile": "arjjunk-simple_collapse.html",
-            "cssFile": "arjjunk-simple_collapse.css"
+            "file": "arjjunk-simple_collapse.html"
         }
     ],
     "dropdowns":[
@@ -148,15 +130,13 @@
             "username": "arjjunk",
             "name": "Blue Gradient Dropdown",
             "theme":"dark",
-            "htmlFile": "arjjunk-blue_gradient_dropdown.html",
-            "cssFile": "arjjunk-blue_gradient_dropdown.css"
+            "file": "arjjunk-blue_gradient_dropdown.html"
         },
         {
             "username": "arjjunk",
             "name": "Gradient Dropdown",
             "theme":"dark",
-            "htmlFile": "arjjunk-gradient_dropdown.html",
-            "cssFile": "arjjunk-gradient_dropdown.css"
+            "file": "arjjunk-gradient_dropdown.html"
         }
     ],
     "fileupload":[
@@ -164,15 +144,13 @@
             "username": "arjjunk",
             "name": "File Upload",
             "theme":"dark",
-            "htmlFile": "arjjunk-file_upload_dark.html",
-            "cssFile": "arjjunk-file_upload_dark.css"
+            "file": "arjjunk-file_upload_dark.html"
         },
         {
             "username": "arjjunk",
             "name": "Simple File Upload",
             "theme":"dark",
-            "htmlFile": "arjjunk-simple_file_upload.html",
-            "cssFile": "arjjunk-simple_file_upload.css"
+            "file": "arjjunk-simple_file_upload.html"
         }
     ],
     "footer": [
@@ -180,15 +158,13 @@
             "username": "arjjunk",
             "name": "Dark Footer",
             "theme":"light",
-            "htmlFile": "arjjunk-dark_footer.html",
-            "cssFile": "arjjunk-dark_footer.css"
+            "file": "arjjunk-dark_footer.html"
         },
         {
             "username": "arjjunk",
             "name": "Light Footer",
             "theme":"dark",
-            "htmlFile": "arjjunk-light_footer.html",
-            "cssFile": "arjjunk-light_footer.css"
+            "file": "arjjunk-light_footer.html"
         }
     ],
     "forms": [
@@ -196,8 +172,7 @@
             "username": "arjjunk",
             "name": "Simple Form",
             "theme":"dark",
-            "htmlFile": "arjjunk-simple_form.html",
-            "cssFile": "arjjunk-simple_form.css"
+            "file": "arjjunk-simple_form.html"
         }
     ],
     "input": [
@@ -205,16 +180,18 @@
             "username": "arjjunk",
             "name": "Simple Input",
             "theme":"dark",
-            "htmlFile": "arjjunk-outlined_input.html",
-            "cssFile": "arjjunk-outlined_input.css"
+            "file": "arjjunk-outlined_input.html"
         }
     ],
-    "navbar": [
+    
+    "modal": [
+
         {
             "username": "arjjunk",
-            "name": "Basic Navbar",
-            "htmlFile": "navbar1.html",
-            "cssFile": "navbar1.css"
+            "name": "Simple Modal",
+            "theme":"dark",
+            "file": "arjjunk-modal.html"
+            
         }
     ]
 }

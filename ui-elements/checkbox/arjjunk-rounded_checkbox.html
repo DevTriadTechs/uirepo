@@ -1,1 +1,34 @@
 <input type="checkbox" class="rounded-checkbox">
+
+<style>
+.rounded-checkbox {
+    -webkit-appearance: none; 
+    -moz-appearance: none;    
+    appearance: none;         
+    width: 24px;              
+    height: 24px;             
+    border-radius: 50%;      
+    background-color: #fff; 
+    border: 1px solid #00f; 
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+
+.rounded-checkbox:checked {
+    background-color: #0084ff; 
+    color: #fff;
+}
+.rounded-checkbox:checked::after {
+    content: '';
+    position: absolute;
+    top: 4px;   
+    left: 8px; 
+    width: 5px; 
+    height: 10px; 
+    font-weight: bold;
+    border: solid white; 
+    border-width: 0 2px 2px 0; 
+    transform: rotate(45deg); 
+}
+</style>
