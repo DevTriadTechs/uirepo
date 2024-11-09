@@ -1,6 +1,6 @@
 # Contributing to UI REPO
 
-Thank you for your interest in contributing a UI Element to this project! We appreciate your time and creativity. To maintain consistency and ease of use, we’ve provided guidelines below on how to submit your designs, including HTML, CSS, and the necessary metadata.
+Thank you for your interest in contributing a UI Element to this project! We appreciate your time and creativity. To maintain consistency and ease of use, we’ve provided guidelines below on how to submit your designs, including HTML, CSS, JS and the necessary metadata.
 
 ## Table of Contents
 - [How to Contribute](#how-to-contribute)
@@ -13,7 +13,7 @@ Thank you for your interest in contributing a UI Element to this project! We app
 
 Contributing a UI design to this project involves the following steps:
 1. Fork the repository.
-2. Add your UI design (HTML and CSS) to the existing format.
+2. Add your UI design.
 3. Submit a pull request.
 
 We welcome all types of UI designs, including buttons, cards, navbars, accordions, and other interactive elements. Please follow the guidelines below to ensure your contribution can be easily integrated.
@@ -37,8 +37,7 @@ git clone https://github.com/arjjunk/ui-repo.git
 
 Your design should include the following components:
 
-- HTML: The HTML structure for the design.
-- CSS: The CSS that styles your design. Check the [guidlines](GUIDLINES.md) for creating a design.
+- HTML: The HTML structure for the design. Check the [guidlines](GUIDLINES.md) for creating a design.
 
 - Metadata(JSON): Information about the design. Add the metadata in the ui-elements.json file in the following format.
 
@@ -49,8 +48,8 @@ Your design should include the following components:
         {
             "username": "Your github username",
             "name": "Design Name",
-            "htmlFile": "github_username-design_name.html",
-            "cssFile": "github_username-design_name.css"
+            "theme": "light",
+            "file": "github_username-design_name.html",
         }
     ]
 }
@@ -58,7 +57,7 @@ Your design should include the following components:
 
 ### 4. Test Your Design
 
-Before submitting your design, make sure it works as expected. Test the HTML and CSS for responsiveness and accessibility.
+Before submitting your design, make sure it works as expected. Test the HTML and CSS for responsiveness and accessibility.Test if the javascript works properly.
 
 ### 5. Commit Your Changes
 
