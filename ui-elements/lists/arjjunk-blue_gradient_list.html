@@ -1,0 +1,37 @@
+<div>
+    <ul class="list">
+        <li class="list-item" tabindex="0">List Item 1</li>
+        <li class="list-item" tabindex="0">List Item 2</li>
+        <li class="list-item" tabindex="0">List Item 3</li>
+        <li class="list-item" tabindex="0">List Item 4</li>
+    </ul>
+</div>
+
+<style>
+    .list {
+        list-style-type: none;
+        width: 300px;
+        background-color: #000b1c;
+        color: #fff;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .list-item {
+        border: 1px solid #333;
+        padding: 0.8rem 1rem;
+        margin: 0.3rem 0;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    .list-item:hover {
+        background: rgb(58,180,180);
+        background: linear-gradient(117deg, rgba(58,180,180,1) 0%,
+                    rgba(29,87,253,0.329551889115021) 50%,
+                    rgba(76,69,252,1) 100%);
+    }
+
+
+</style>
