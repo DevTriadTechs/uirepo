@@ -26,12 +26,12 @@ Please create the designs by following the [Guidlines](GUIDLINES.md)
 To add a UI design, follow these steps:
 
 ### 1. Fork the Repository
-Fork the [ui-repo](https://github.com/arjjunk/ui-repo/) repository to your GitHub account by clicking the "Fork" button at the top of the repository page.
+Fork the [ui-repo](https://github.com/devtriadtechs/ui-repo/) repository to your GitHub account by clicking the "Fork" button at the top of the repository page.
 
 ### 2. Clone the Repository
 Once you've forked the repository, clone it to your local machine to begin working on it:
 ```bash
-git clone https://github.com/arjjunk/ui-repo.git
+git clone https://github.com/devtriadtechs/uirepo.git
 ```
 ### 3. Add Your Design
 
