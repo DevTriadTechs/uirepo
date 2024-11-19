@@ -23,7 +23,7 @@ async function loadUIElements(category) {
                 cardDiv.classList.add('design-wrapper'); 
 
                 const iframe = document.createElement('iframe');
-                iframe.style.width = '150%';
+                iframe.style.width = '110%';
                 iframe.style.border = 'none';
                 iframe.style.borderRadius = '16px';
 

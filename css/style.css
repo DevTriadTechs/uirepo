@@ -165,7 +165,16 @@ h1{
     font-style: normal; 
 }
 
+.license-heading{
+    font-size: 0.3;
+    font-weight: 800;
+    opacity: 0.7;
+}
 
+.license{
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
 
 /* css for design page starts here */
 .designs{
