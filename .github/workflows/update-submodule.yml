@@ -18,7 +18,7 @@ jobs:
     - name: Update the submodule to the latest commit
       run: |
         echo "Updating submodule..."
-        git submodule update --remote --merge  # Fetch the latest submodule changes
+        git submodule update --remote --merge --allow-unrelated-histories # Fetch the latest submodule changes
         git add ui-repo  # Stage the updated submodule reference
         git commit -m "Update submodule to latest commit in ui-repo"
         git push
