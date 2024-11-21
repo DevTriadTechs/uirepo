@@ -1,0 +1,3 @@
+[submodule "ui-repository"]
+	path = ui-repository
+	url = git@github.com:devtriadtechs/ui-repository.git

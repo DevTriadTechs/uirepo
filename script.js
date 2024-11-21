@@ -7,7 +7,7 @@ function getCategoryFromUrl() {
 // Function to load UI elements based on the category
 async function loadUIElements(category) {
     try {
-        const response = await fetch('ui-elements.json');  // Fetch JSON data
+        const response = await fetch('ui-repository/ui-elements.json');  // Fetch JSON data
         const uiElements = await response.json();
         
         const designsContainer = document.getElementById('designs-container');
@@ -29,7 +29,7 @@ async function loadUIElements(category) {
 
 
                 // Set the iframe's source to the design file path
-                iframe.src = `ui-elements/${category}/${element.file}`;
+                iframe.src = `ui-repository/${category}/${element.file}`;
 
 
                 if (element.theme === 'dark') {
@@ -78,7 +78,7 @@ async function loadUIElements(category) {
                 viewCodeBtn.textContent = "</> Code";
                 viewCodeBtn.classList.add('view-btn');
                 viewCodeBtn.onclick = () => {
-                    window.location.href = `editor.html?file=ui-elements/${category}/${element.file}&theme=${element.theme}`;
+                    window.location.href = `editor.html?file=ui-repository/${category}/${element.file}&theme=${element.theme}`;
                 };
 
                 const userName = document.createElement('span');

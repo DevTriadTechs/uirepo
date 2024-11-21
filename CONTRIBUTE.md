@@ -12,7 +12,7 @@ Thank you for your interest in contributing a UI Element to this project! We app
 ## How to Contribute
 
 Contributing a UI design to this project involves the following steps:
-1. Fork the repository.
+1. Fork the ui-repository.
 2. Add your UI design.
 3. Submit a pull request.
 
@@ -26,12 +26,12 @@ Please create the designs by following the [Guidlines](GUIDLINES.md)
 To add a UI design, follow these steps:
 
 ### 1. Fork the Repository
-Fork the [ui-repo](https://github.com/devtriadtechs/ui-repo/) repository to your GitHub account by clicking the "Fork" button at the top of the repository page.
+Fork the [ui-repo](https://github.com/devtriadtechs/ui-repository/) repository to your GitHub account by clicking the "Fork" button at the top of the repository page.
 
 ### 2. Clone the Repository
 Once you've forked the repository, clone it to your local machine to begin working on it:
 ```bash
-git clone https://github.com/devtriadtechs/uirepo.git
+git clone https://github.com/devtriadtechs/ui-repository.git
 ```
 ### 3. Add Your Design
 

@@ -6,4 +6,4 @@ The UI Repo platform's source code is licensed under the GNU General Public Lice
 ## UI Elements
 The UI elements provided in the UI-Repo library (e.g., buttons, cards, modals) are licensed under the MIT License. You are free to use, modify, and distribute these elements for personal, commercial, or proprietary projects without restrictions.
 
-See [GNU-GPL LICENSE](LICENSE-GPL.txt) for the platform license and [MIT LICENSE](ui-elements/LICENSE-MIT.txt) for the UI elements license.
+See [GNU-GPL LICENSE](LICENSE-GPL.txt) for the platform license and [MIT LICENSE](ui-repository/LICENSE-MIT.txt) for the UI elements license.
