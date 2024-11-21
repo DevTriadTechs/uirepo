@@ -42,7 +42,7 @@ Check this sample code
 
 - The HTML file should be saved in the directory corresponding to the ui element.  
 - For example,   
-If you are creating a button, save the HTML file in the __ui-elements/buttons/__ directory.  
+If you are creating a button, save the HTML file in the __buttons/__ directory.  
 - You can create and submit multiple designs at a time. If you are creating multiple designs at a time you should create HTML file for each design.  
 
 ## Naming Rules
