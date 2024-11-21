@@ -1,0 +1,26 @@
+name: Update Submodule Reference
+
+on:
+  repository_dispatch:
+    types:
+      - update-submodule  # Matches the event-type from the ui-repo workflow
+
+jobs:
+  update-submodule:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout platform repository with submodules
+      uses: actions/checkout@v2
+      with:
+        submodules: 'true'  # Fetch submodule content as well
+
+    - name: Update the submodule to the latest commit
+      run: |
+        echo "Updating submodule..."
+        git submodule update --remote --merge  # Fetch the latest submodule changes
+        git add ui-repo  # Stage the updated submodule reference
+        git commit -m "Update submodule to latest commit in ui-repo"
+        git push
+    - name: Notify success
+      run: echo "Submodule updated successfully!"
