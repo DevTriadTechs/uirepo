@@ -19,8 +19,8 @@ jobs:
       run: |
         echo "Updating submodule..."
         git submodule update --init --remote --merge --force # Fetch the latest submodule changes
-        git add ui-repo  # Stage the updated submodule reference
-        git commit -m "Update submodule to latest commit in ui-repo"
+        git add ui-repository  # Stage the updated submodule reference
+        git commit -m "Update submodule to latest commit in ui-repository"
         git push
     - name: Notify success
       run: echo "Submodule updated successfully!"
